@@ -1,5 +1,5 @@
-<h1>Your lists</h1>
 <div class="container">
+  <h1>Your lists</h1>
   <ul>
     <% @lists.each do |l| %>
     <li><%= link_to l.name, list_path(l) %></li>
