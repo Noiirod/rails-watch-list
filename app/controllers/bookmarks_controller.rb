@@ -1,5 +1,5 @@
 class BookmarksController < ApplicationController
-  before_action :set_list, only: %i[new create destroy]
+  before_action :set_list, only: %i[new create]
   def new
     @movies = Movie.all
     @bookmark = Bookmark.new

@@ -6,6 +6,7 @@
      <%= m.overview %>
      <%= m.rating %>
      <% bookmark = Bookmark.find_by(movie: m, list: @list)%>
+     <%= bookmark.comment %>
      <%= link_to "Delete from list",
       bookmark_path(bookmark),
       data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
